@@ -2,7 +2,7 @@
 #Assignment - 3
 #Kumar A
 
-#Write python code for blinking LED and Traffic Lights for Raspberry pi. Only pyhton code is enough,no need to excute in raspberry pi.
+#Write python code for blinking LED for Raspberry pi.
 
 #LED Blinking Python code
 
