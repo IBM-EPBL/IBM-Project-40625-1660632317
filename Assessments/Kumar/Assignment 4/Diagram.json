@@ -1,0 +1,32 @@
+/*Assignment 4: 
+TEAM_ID:PNT2022TMID36623
+KUMAR A
+Reg_No:112819104018
+
+Write code and connections in wokwi for the ultrasonic sensor.
+Whenever the distance is less than 100 cms send an "alert" to the IBM cloud and display in
+the device recent events.
+Upload document with wokwi share link and images of IBM cloud*/
+//Diagram.json:
+{
+  "version": 1,
+  "author": "KUMAR A",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -87.68, "left": -233.71, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -150.05, "left": -4.82, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [
+      "esp:VIN",
+      "ultrasonic1:VCC",
+      "red",
+      [ "h-37.16", "v-178.79", "h200", "v173.33", "h100.67" ]
+    ],
+    [ "esp:GND.1", "ultrasonic1:GND", "black", [ "h39.87", "v44.04", "h170" ] ],
+    [ "esp:D5", "ultrasonic1:TRIG", "green", [ "h54.54", "v85.07", "h130.67" ] ],
+    [ "esp:D18", "ultrasonic1:ECHO", "green", [ "h77.87", "v80.01", "h110" ] ]
+  ]
+}
